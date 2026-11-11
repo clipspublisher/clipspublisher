@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>TikTok login</title></head>
+<body>
+<p id="code">Waiting for code.</p>
+<script>
+const code = new URLSearchParams(location.search).get("code");
+document.getElementById("code").textContent = code || "No code in the address.";
+</script>
+</body>
+</html>
